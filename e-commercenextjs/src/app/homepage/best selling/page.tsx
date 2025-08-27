@@ -1,7 +1,9 @@
+import Image from "next/image";
+
 const bestSellingProducts = [
   {
     id: 1,
-    image: "/images/north-coat.png",
+    image: "/images/hoodie.png",
     title: "The north coat",
     price: 260,
     oldPrice: 360,
@@ -9,7 +11,7 @@ const bestSellingProducts = [
   },
   {
     id: 2,
-    image: "/images/gucci-duffle.png",
+    image: "/images/guccibag.jpeg",
     title: "Gucci duffle bag",
     price: 960,
     oldPrice: 1160,
@@ -17,7 +19,7 @@ const bestSellingProducts = [
   },
   {
     id: 3,
-    image: "/images/rgb-cooler.png",
+    image: "/images/proof.png",
     title: "RGB liquid CPU Cooler",
     price: 160,
     oldPrice: 170,
@@ -25,7 +27,7 @@ const bestSellingProducts = [
   },
   {
     id: 4,
-    image: "/images/small-bookshelf.png",
+    image: "/images/desk.png",
     title: "Small BookSelf",
     price: 360,
     oldPrice: 460,
@@ -44,25 +46,35 @@ const BestSellingSection = () => (
         View All
       </button>
     </div>
-    <div className="grid grid-cols-2 sm:grid-cols-4 gap-6">
-      {bestSellingProducts.map(({ id, image, title, price, oldPrice, rating }) => (
-        <div key={id} className="relative bg-white rounded shadow p-3 group">
-          
-          <div className="absolute top-3 right-3 cursor-pointer opacity-70 group-hover:opacity-100 transition">
-            ♡
-          </div>
-          <img src={image} alt={title} className="mx-auto h-32 object-contain mb-3" />
-          <h3 className="font-semibold text-sm h-12">{title}</h3>
-          <div className="flex items-center justify-between text-pink-600 font-semibold mt-1">
-            <span>${price}</span>
-            <span className="line-through text-gray-400 text-xs">${oldPrice}</span>
-          </div>
-          <div className="text-yellow-400 text-xs mt-1">
-            {"★".repeat(5)} <span className="text-gray-500 ml-1">({rating})</span>
-          </div>
-        </div>
-      ))}
+<div className="grid grid-cols-2 sm:grid-cols-4 gap-6">
+  {bestSellingProducts.map(({ id, image, title, price, oldPrice, rating }) => (
+    <div key={id} className="relative bg-white rounded shadow p-3 group">
+      <div className="absolute top-3 right-3 cursor-pointer opacity-70 group-hover:opacity-100 transition">
+        ♡
+      </div>
+      <img src={image} alt={title} className="mx-auto h-32 object-contain mb-3" />
+      <h3 className="font-semibold text-sm h-12">{title}</h3>
+      <div className="flex items-center justify-between text-pink-600 font-semibold mt-1">
+        <span>${price}</span>
+        <span className="line-through text-gray-400 text-xs">${oldPrice}</span>
+      </div>
+      <div className="text-yellow-400 text-xs mt-1">
+        {"★".repeat(5)} <span className="text-gray-500 ml-1">({rating})</span>
+      </div>
     </div>
+  ))}
+
+  <div className="flex-1  relative flex justify-end   rounded items-center  bg-black mt-4 ml-50 h-[300px] w-[500px]">
+    <Image
+      src="/images/soundspeak.png"
+      alt="Sound speaker"
+      width={650}
+      height={250}
+      className=""
+    />
+  </div>
+</div>
+
   </section>
 );
 

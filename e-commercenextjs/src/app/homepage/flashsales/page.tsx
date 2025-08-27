@@ -11,7 +11,7 @@ const products = [
   },
   {
     id: 2,
-    image: "/images/keyboard.png",
+    image: "/images/gaming-keyboard.jpg",
     title: "AK-900 Wired Keyboard",
     prevPrice: 960,
     price: 860,
@@ -20,7 +20,7 @@ const products = [
   },
   {
     id: 3,
-    image: "/images/monitor.png",
+    image: "/images/monitor.jpeg",
     title: "IPS LCD Gaming Monitor",
     prevPrice: 400,
     price: 370,
@@ -29,7 +29,7 @@ const products = [
   },
   {
     id: 4,
-    image: "/images/chair.png",
+    image: "/images/table.png",
     title: "S-Series Comfort Chair",
     prevPrice: 400,
     price: 375,

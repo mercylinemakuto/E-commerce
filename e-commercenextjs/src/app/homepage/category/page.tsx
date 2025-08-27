@@ -1,10 +1,10 @@
 const categories = [
-  { id: 1, name: "Phones", icon: "/icons/phone.svg" },
-  { id: 2, name: "Computers", icon: "/icons/computer.svg" },
-  { id: 3, name: "SmartWatch", icon: "/icons/smartwatch.svg" },
-  { id: 4, name: "Camera", icon: "/icons/camera.svg" },
-  { id: 5, name: "HeadPhones", icon: "/icons/headphones.svg" },
-  { id: 6, name: "Gaming", icon: "/icons/gaming.svg" },
+  { id: 1, name: "Phones", icon: "/images/phoneicon.png" },
+  { id: 2, name: "Computers", icon: "/images/desktop icon.png" },
+  { id: 3, name: "SmartWatch", icon: "/images/smartwatch icon.png" },
+  { id: 4, name: "Camera", icon: "/images/camera.jpeg" },
+  { id: 5, name: "HeadPhones", icon: "/images/headphones.png" },
+  { id: 6, name: "Gaming", icon: "/images/gaming icon.png" },
 ];
 
 const CategorySection = () => (

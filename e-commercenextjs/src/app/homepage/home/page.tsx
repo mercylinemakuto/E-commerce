@@ -47,13 +47,13 @@ const HomeHeaderSection = () => (
         </ul>
       </aside>
       
-      <div className="flex-1 relative rounded overflow-hidden bg-black">
+      <div className="flex-1  relative flex justify-end   items-center h-full  bg-black">
         <Image
-          src="/images/iphone14-banner.png" 
+          src="/images/iphones.jpg" 
           alt="iPhone 14 Series"
-          width={900}
-          height={300}
-          className="rounded-lg w-full object-cover"
+          width={500}
+          height={200}
+          className=" object-contain"
         />
         
         <div className="absolute top-10 left-10 text-white">

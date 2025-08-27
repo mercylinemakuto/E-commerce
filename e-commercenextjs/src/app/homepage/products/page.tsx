@@ -11,7 +11,7 @@ const products = [
     price: "$100",
     rating: 4,
     reviews: 33,
-    image: "https://via.placeholder.com/150x150",
+    image: "/images/dogfood.png",
     discount: null,
   },
   {
@@ -20,7 +20,7 @@ const products = [
     price: "$360",
     rating: 5,
     reviews: 95,
-    image: "https://via.placeholder.com/150x150",
+    image: "/images/camera.jpeg",
     discount: null,
   },
   {
@@ -29,7 +29,7 @@ const products = [
     price: "$700",
     rating: 5,
     reviews: 223,
-    image: "https://via.placeholder.com/150x150",
+    image: "/images/laptop.png",
     discount: null,
   },
   {
@@ -38,7 +38,7 @@ const products = [
     price: "$500",
     rating: 4,
     reviews: 145,
-    image: "https://via.placeholder.com/150x150",
+    image: "/images/products.jpg",
     discount: null,
   },
   {
@@ -47,7 +47,7 @@ const products = [
     price: "$960",
     rating: 5,
     reviews: 65,
-    image: "https://via.placeholder.com/150x150",
+    image: "/images/car.jpg",
     discount: "New",
   },
   {
@@ -56,7 +56,7 @@ const products = [
     price: "$116",
     rating: 5,
     reviews: 35,
-    image: "https://via.placeholder.com/150x150",
+    image: "/images/football-shoes.jpg",
     discount: "New",
   },
   {
@@ -65,7 +65,7 @@ const products = [
     price: "$660",
     rating: 5,
     reviews: 55,
-    image: "https://via.placeholder.com/150x150",
+    image: "/images/gamepad.png",
     discount: "New",
   },
   {
@@ -74,7 +74,7 @@ const products = [
     price: "$660",
     rating: 5,
     reviews: 95,
-    image: "https://via.placeholder.com/150x150",
+    image: "/images/jacket.png",
     discount: null,
   },
 ];
