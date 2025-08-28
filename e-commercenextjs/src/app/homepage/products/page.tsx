@@ -1,8 +1,9 @@
+'use client';
 
 import { FaHeart } from "react-icons/fa";
 import { FaStar } from "react-icons/fa6";
+import Image from "next/image";
 import Button from "../../sharedcomponents/Button";
-
 
 const products = [
   {
@@ -78,37 +79,36 @@ const products = [
     discount: null,
   },
 ];
- const ExploreProducts =()=> {
+
+const ExploreProducts = () => {
   return (
     <section className="max-w-7xl mx-auto px-6 md:px-10 py-12">
-      
       <div className="mb-8">
         <h3 className="text-red-500 text-sm font-semibold">Our Products</h3>
         <h2 className="text-2xl md:text-3xl font-bold">Explore Our Products</h2>
       </div>
-      
       <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6">
         {products.map((product) => (
           <div
             key={product.id}
             className="bg-white border border-gray-200 rounded-lg p-4 shadow hover:shadow-lg transition relative"
           >
-            
             <button className="absolute top-3 right-3 bg-white p-1 rounded-full shadow hover:bg-gray-100 transition">
               <FaHeart size={16} className="text-gray-500" />
             </button>
-            
-            <img
+            <Image
               src={product.image}
               alt={product.name}
-              className="w-full h-36 object-contain mb-4"
+              width={256}  // Approx width matching w-full and h-36 object-contain
+              height={144} // Approx height (h-36 = 9rem ~144px)
+              className="mb-4"
+              objectFit="contain"
+              priority={false}
             />
-            
             <h3 className="text-sm font-medium text-gray-800 mb-2 line-clamp-2">
               {product.name}
             </h3>
             <p className="text-red-500 font-semibold text-sm">{product.price}</p>
-            
             <div className="flex items-center mt-1 gap-1">
               {[...Array(5)].map((_, i) => (
                 <FaStar
@@ -117,19 +117,16 @@ const products = [
                   className={i < product.rating ? "text-yellow-400" : "text-gray-300"}
                 />
               ))}
-              <span className="ml-2 text-gray-500 text-xs">
-                ({product.reviews})
-              </span>
+              <span className="ml-2 text-gray-500 text-xs">({product.reviews})</span>
             </div>
           </div>
         ))}
       </div>
-     
       <div className="flex justify-center mt-10">
         <Button text="View All Products" onClick={() => alert("Show all products")} />
       </div>
     </section>
   );
-}
+};
 
 export default ExploreProducts;

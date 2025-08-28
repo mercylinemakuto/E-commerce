@@ -1,4 +1,3 @@
-
 import Image from "next/image";
 
 const HomeHeaderSection = () => (
@@ -35,25 +34,26 @@ const HomeHeaderSection = () => (
      
       <aside className="hidden lg:block w-56">
         <ul className="space-y-3 font-medium text-gray-700">
-          <li>Woman's Fashion</li>
-          <li>Men's Fashion</li>
+          <li>Woman&apos;s Fashion</li>
+          <li>Men&apos;s Fashion</li>
           <li>Electronics</li>
-          <li>Home & Lifestyle</li>
+          <li>Home &amp; Lifestyle</li>
           <li>Medicine</li>
-          <li>Sports & Outdoor</li>
-          <li>Baby's & Toys</li>
-          <li>Groceries & Pets</li>
-          <li>Health & Beauty</li>
+          <li>Sports &amp; Outdoor</li>
+          <li>Baby&apos;s &amp; Toys</li>
+          <li>Groceries &amp; Pets</li>
+          <li>Health &amp; Beauty</li>
         </ul>
       </aside>
       
-      <div className="flex-1  relative flex justify-end   items-center h-full  bg-black">
+      <div className="flex-1 relative flex justify-end items-center h-full bg-black">
         <Image
           src="/images/iphones.jpg" 
           alt="iPhone 14 Series"
           width={500}
           height={200}
-          className=" object-contain"
+          className="object-contain"
+          priority
         />
         
         <div className="absolute top-10 left-10 text-white">

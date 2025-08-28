@@ -1,3 +1,6 @@
+'use client';
+
+import Image from 'next/image';
 
 const products = [
   {
@@ -41,7 +44,7 @@ const products = [
 const FlashSaleSection = () => (
   <section className="max-w-7xl mx-auto mt-14 px-4">
     <div className="mb-4 flex items-center gap-3">
-      <span className="text-pink-600 font-bold text-sm">Today's</span>
+      <span className="text-pink-600 font-bold text-sm">Today&apos;s</span>
       <h2 className="text-2xl font-bold">Flash Sales</h2>
       
       <div className="ml-auto flex gap-2 items-center bg-black text-white rounded px-3 py-1 text-xs font-medium">
@@ -60,10 +63,12 @@ const FlashSaleSection = () => (
           <div className="absolute top-4 left-4 bg-pink-600 text-white px-2 py-1 text-xs rounded">
             {product.badge}
           </div>
-          <img
+          <Image
             src={product.image}
             alt={product.title}
-            className="w-28 h-28 object-contain mb-3 mx-auto"
+            width={112}
+            height={112}
+            className="object-contain mb-3 mx-auto"
           />
           <h3 className="font-semibold text-base mb-1">{product.title}</h3>
           <div className="flex items-center gap-2 mb-1">
